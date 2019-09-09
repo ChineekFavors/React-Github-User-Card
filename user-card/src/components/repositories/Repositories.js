@@ -4,7 +4,9 @@ import React from 'react';
 
 
 	return (
-		<p className="repositories" > Public Repositories: {props.repository}</p>	
+		<p className="repositories" > 
+			Public Repositories: {props.repository}
+		</p>	
 	);
 	
 };

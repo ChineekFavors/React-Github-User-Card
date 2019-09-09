@@ -4,7 +4,9 @@ import React from 'react';
 
 
 	return (
-		<h3 className="location" >Location: {props.location}</h3>	
+		<h3 className="location" >
+			Location: {props.location}
+		</h3>	
 	);
 	
 };
