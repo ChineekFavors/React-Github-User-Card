@@ -1,9 +1,10 @@
 import React from 'react';
 
 import Avatar from "../avatar/Avatar.js"
+import Name from "../name/Name.js"
 
 const Card = props => {
-	console.log(props.name)
+	console.log(props.name.name)
 	
 
  
@@ -12,7 +13,7 @@ const Card = props => {
 		
 		<div className="userCard">
 			<Avatar avatar={props.name['avatar_url']} />
-		<h1>{props.name.name}</h1>
+			<Name name={props.name.name} />
 
 		</div>
 	);
