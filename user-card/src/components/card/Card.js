@@ -5,12 +5,10 @@ import Name from "../name/Name.js"
 import Location from "../location/Location.js"
 import Repositories from "../repositories/Repositories.js"
 import Following from "../following/Following.js"
+import Bio from "../bio/Bio.js"
 
 const Card = props => {
-	console.log(props.name)
 	
-
- 
 	
 	return (
 		
@@ -22,6 +20,7 @@ const Card = props => {
 			<Following following={props.name.following} 
 				followers={props.name.followers}
 			/>
+			<Bio bio={props.name.bio}/>
 
 		</div>
 	);
