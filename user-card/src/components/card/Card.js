@@ -14,12 +14,16 @@ const Card = props => {
 		
 		<div className="userCard">
 			<Avatar avatar={props.name['avatar_url']} />
-			<Name name={props.name.name} />
-			<Location location={props.name.location} />
+			<div className="nameLocationDiv">
+				<Name name={props.name.name} />
+				<Location location={props.name.location} />
+			</div>
+			
 			<Repositories repository={props.name['public_repos']}/>
 			<Following following={props.name.following} 
 				followers={props.name.followers}
 			/>
+			
 			<Bio bio={props.name.bio}/>
 
 		</div>
