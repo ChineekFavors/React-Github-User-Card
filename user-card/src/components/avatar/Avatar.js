@@ -4,7 +4,7 @@ import React from 'react';
 
 
 	return (
-		<img src={props.avatar} alt="avatar" />	
+		<img className='avatar' src={props.avatar} alt="avatar" />	
 	);
 	
 };

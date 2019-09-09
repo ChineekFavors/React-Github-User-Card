@@ -4,7 +4,7 @@ import React from 'react';
 
 
 	return (
-		<h2>{props.name}</h2>	
+		<h2 className="name" >{props.name}</h2>	
 	);
 	
 };
