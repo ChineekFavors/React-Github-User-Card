@@ -5,28 +5,31 @@ import './App.css';
 import Card from "./components/card/Card";
 
 class App extends React.Component{
+ 
   constructor(){
     super();
     this.state = {
-      user:[],
+      user: []
     };
+  
   }
 
-  componentDidMount(){
+  componentDidMount = () => {
     fetch('https://api.github.com/users/chineekfavors')
       .then(res => res.json())
-      .then(data => this.setState({user: data }))
-      .then(() => console.log(this.state.user))
+      .then(data => this.setState({user: data}))
       .catch(error => console.log('there was a problem', error))
-  };
+  }
+
+  
 
   render(){
     return (
+
       <div className="App">
-      <h1>Github-User-Card</h1>
-      <Card user={this.state.user}/>
-        
-      </div>
+        <h1>GitHub User Card</h1>
+        <Card name={this.state.user} />
+      </div> 
     );
   }
 }
